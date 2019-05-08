@@ -167,7 +167,7 @@ export const getLoginMethodAndParams = (firebase, creds) => {
  * @return {Promise} Resolves when Firebase auth is ready in the store.
  */
 const isAuthReady = (store, stateName) => {
-  const state = store.getState()
+  const state = store.getState().toJS()
   const firebaseState = stateName ? state[stateName] : state
   const firebaseAuthState = firebaseState && firebaseState.auth
   if (!firebaseAuthState) {
