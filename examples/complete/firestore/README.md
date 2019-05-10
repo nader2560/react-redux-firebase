@@ -68,7 +68,7 @@ Your app is ready to be deployed!
 
 Checkout [the auth recipes](../../../docs/recipes/auth.md) for some simple examples of how to integrate auth.
 
-**Warning**: You need to handle the loading state of auth! The recipes go over this, [but as mentioned in this issue here](https://github.com/prescottprue/react-redux-firebase/issues/93), it can seem unclear initially.
+**Warning**: You need to handle the loading state of auth! The recipes go over this, [but as mentioned in this issue here](https://github.com/nader2560/react-redux-firebase/issues/93), it can seem unclear initially.
 
 ### Why Is Recompose Used
 

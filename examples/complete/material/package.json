@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prescottprue/react-redux-firebase.git"
+    "url": "git+https://github.com/nader2560/react-redux-firebase.git"
   },
   "engines": {
     "node": ">=8"

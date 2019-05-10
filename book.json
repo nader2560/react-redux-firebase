@@ -4,11 +4,11 @@
   "plugins": ["edit-link", "prism", "-highlight", "github", "anchorjs", "versions-select", "ga"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/prescottprue/react-redux-firebase/tree/master",
+      "base": "https://github.com/nader2560/react-redux-firebase/tree/master",
       "label": "Edit This Page"
     },
     "github": {
-      "url": "https://github.com/prescottprue/react-redux-firebase/"
+      "url": "https://github.com/nader2560/react-redux-firebase/"
     },
     "theme-default": {
       "styles": {

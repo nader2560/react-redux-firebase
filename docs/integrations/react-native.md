@@ -8,9 +8,9 @@ Regardless of which path you want to take, initial setup is the same, so we will
 
 ## JS/Web
 
-Setup and use `react-redux-firebase-immutable` as normal (described in the [use section of the README](https://github.com/prescottprue/react-redux-firebase#use)). Since Firebase is initialized outside of react-redux-firebase-immutable, the automatic handling of react-native done by Firebase works.
+Setup and use `react-redux-firebase-immutable` as normal (described in the [use section of the README](https://github.com/nader2560/react-redux-firebase#use)). Since Firebase is initialized outside of react-redux-firebase-immutable, the automatic handling of react-native done by Firebase works.
 
-[react-native complete example app](https://github.com/prescottprue/react-redux-firebase/tree/master/examples/complete/react-native)
+[react-native complete example app](https://github.com/nader2560/react-redux-firebase/tree/master/examples/complete/react-native)
 
 **NOTES**
 * The web SDK is actually used directly, so this method is as close as it comes to web dev
@@ -21,7 +21,7 @@ Setup and use `react-redux-firebase-immutable` as normal (described in the [use 
 
 Passing in an instance also allows for libraries with similar APIs (such as [`react-native-firebase`](https://github.com/invertase/react-native-firebase)) to be used instead:
 
-1. Follow [use instructions in README](https://github.com/prescottprue/react-redux-firebase#use)
+1. Follow [use instructions in README](https://github.com/nader2560/react-redux-firebase#use)
 1. When creating redux store pass `react-native-firebase` App instance into `reactReduxFirebase` when creating store:
 
   **createStore.js**
@@ -57,7 +57,7 @@ Passing in an instance also allows for libraries with similar APIs (such as [`re
   };
   ```
 
-Full `react-native-firebase` example app source with styling available [in the react-native-firebase complete example](https://github.com/prescottprue/react-redux-firebase/tree/master/examples/complete/react-native-firebase).
+Full `react-native-firebase` example app source with styling available [in the react-native-firebase complete example](https://github.com/nader2560/react-redux-firebase/tree/master/examples/complete/react-native-firebase).
 
 ## Creating Your Own
 

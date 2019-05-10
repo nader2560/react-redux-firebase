@@ -177,7 +177,7 @@ ASDF123: {
 
 There is also the option to place the results of a populate on another parameter instead of replacing the original child (i.e. "alias" the child result). An example of this could be populating the `owner` parameter onto the `ownerObj` parameter, which would leave the `owner` parameter intact (since the child from the populate was "aliased" to `ownerObj`).
 
-For more details including the initial feature request, checkout [issue #126](https://github.com/prescottprue/react-redux-firebase/issues/126).
+For more details including the initial feature request, checkout [issue #126](https://github.com/nader2560/react-redux-firebase/issues/126).
 
 ##### Example
 ```javascript

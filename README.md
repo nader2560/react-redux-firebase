@@ -15,7 +15,7 @@
 
 ## [Demo](https://demo.react-redux-firebase.com)
 
-The [Material Example](https://github.com/prescottprue/react-redux-firebase/tree/master/examples/complete/material) is deployed to [demo.react-redux-firebase.com](https://demo.react-redux-firebase.com).
+The [Material Example](https://github.com/nader2560/react-redux-firebase/tree/master/examples/complete/material) is deployed to [demo.react-redux-firebase.com](https://demo.react-redux-firebase.com).
 
 ## Features
 
@@ -31,7 +31,7 @@ The [Material Example](https://github.com/prescottprue/react-redux-firebase/tree
 
 ## Installation
 
-Interested in support for [`react-redux@^6`](https://github.com/reduxjs/react-redux) or the [new react context API](https://reactjs.org/docs/context.html)? Checkout [the `next` branch which contains the next upcoming major version](https://github.com/prescottprue/react-redux-firebase/tree/next) (installed through `npm i --save react-redux-firebase@next`).
+Interested in support for [`react-redux@^6`](https://github.com/reduxjs/react-redux) or the [new react context API](https://reactjs.org/docs/context.html)? Checkout [the `next` branch which contains the next upcoming major version](https://github.com/nader2560/react-redux-firebase/tree/next) (installed through `npm i --save react-redux-firebase@next`).
 
 ```bash
 npm install --save react-redux-firebase
@@ -355,7 +355,7 @@ Note: In an effort to keep things simple, the wording from this explanation was 
 
 This project exists thanks to all the people who contribute.
 
-<a href="https://github.com/prescottprue/react-redux-firebase/graphs/contributors"><img src="https://opencollective.com/react-redux-firebase/contributors.svg?width=890" /></a>
+<a href="https://github.com/nader2560/react-redux-firebase/graphs/contributors"><img src="https://opencollective.com/react-redux-firebase/contributors.svg?width=890" /></a>
 
 ## Backers
 
@@ -379,7 +379,7 @@ Thank you to all our backers! 🙏
 [coverage-image]: https://img.shields.io/codecov/c/github/prescottprue/react-redux-firebase.svg?style=flat-square
 [coverage-url]: https://codecov.io/gh/prescottprue/react-redux-firebase
 [license-image]: https://img.shields.io/npm/l/react-redux-firebase.svg?style=flat-square
-[license-url]: https://github.com/prescottprue/react-redux-firebase/blob/master/LICENSE
+[license-url]: https://github.com/nader2560/react-redux-firebase/blob/master/LICENSE
 [code-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [code-style-url]: http://standardjs.com/
 [gitter-image]: https://img.shields.io/gitter/room/redux-firebase/gitter.svg?style=flat-square

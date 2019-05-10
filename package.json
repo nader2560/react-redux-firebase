@@ -1,6 +1,6 @@
 {
   "name": "react-redux-firebase-immutable",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Redux integration for Firebase. Comes with a Higher Order Components for use with React.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -37,10 +37,10 @@
   "homepage": "http://react-redux-firebase.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prescottprue/react-redux-firebase.git"
+    "url": "git+https://github.com/nader2560/react-redux-firebase.git"
   },
   "bugs": {
-    "url": "https://github.com/prescottprue/react-redux-firebase/issues"
+    "url": "https://github.com/nader2560/react-redux-firebase/issues"
   },
   "author": {
     "name": "Prescott Prue && an eDonec fork",

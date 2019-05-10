@@ -549,7 +549,7 @@ describe('reducer', () => {
       expect(currentState).to.have.deep.property('auth.isEmpty', false)
     })
 
-    // For details view https://github.com/prescottprue/react-redux-firebase/issues/301
+    // For details view https://github.com/nader2560/react-redux-firebase/issues/301
     it('sets profile state to isLoaded: false, isEmpty: true', () => {
       const auth = { some: 'value' }
       action = { type: actionTypes.LOGIN, auth }

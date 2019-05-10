@@ -123,7 +123,7 @@ reactReduxFirebase(fbConfig, rrfConfig)
 
 Now when logging in through `login` method, user will be listed as online until they logout or end the session (close the tab or window).
 
-**NOTE:** Currently this is not triggered on logout, but that is a [planned feature for the upcoming v3.0.0 version](https://github.com/prescottprue/react-redux-firebase/wiki/v3.0.0-Roadmap). Currently, the presense status will only change when the user becomes disconnected from the Database (i.e. closes the tab).
+**NOTE:** Currently this is not triggered on logout, but that is a [planned feature for the upcoming v3.0.0 version](https://github.com/nader2560/react-redux-firebase/wiki/v3.0.0-Roadmap). Currently, the presense status will only change when the user becomes disconnected from the Database (i.e. closes the tab).
 
 ## Wait For Auth To Be Ready (SSR)
 

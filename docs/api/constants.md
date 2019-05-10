@@ -115,7 +115,7 @@ Default configuration options
     file metadata to Firestore instead of Real Time Database.
 -   `resetBeforeLogin` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** `true` Whether or not to reset auth
     and profile when logging in (see issue
-    [#254](https://github.com/prescottprue/react-redux-firebase/issues/254)
+    [#254](https://github.com/nader2560/react-redux-firebase/issues/254)
     for more details).
 -   `enableRedirectHandling` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** `true` Whether or not to enable
     redirect handling. This must be disabled if environment is not http/https
@@ -125,7 +125,7 @@ Default configuration options
 -   `enableEmptyAuthChanges` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** `false` Whether or not to enable
     empty auth changes. When set to true, `onAuthStateChanged` will be fired with,
     empty auth changes such as `undefined` on initialization
-    (see [#137](https://github.com/prescottprue/react-redux-firebase/issues/137)).
+    (see [#137](https://github.com/nader2560/react-redux-firebase/issues/137)).
     Requires `v1.5.0-alpha` or higher.
 -   `autoPopulateProfile` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** `false` REMOVED FROM v2.0.0.
     Whether or not to automatically populate profile with data loaded through
@@ -145,7 +145,7 @@ Default configuration options
 -   `firebaseStateName` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 'firebase' Assumed name of Firebase
     state (name given when passing reducer to combineReducers). Used in
     firebaseAuthIsReady promise (see
-    [#264](https://github.com/prescottprue/react-redux-firebase/issues/264)).
+    [#264](https://github.com/nader2560/react-redux-firebase/issues/264)).
 -   `attachAuthIsReady` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** `false` Whether or not to attach
     firebaseAuthIsReady to store. authIsLoaded can be imported and used
     directly instead based on preference.

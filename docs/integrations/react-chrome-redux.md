@@ -1,7 +1,7 @@
 # React Chrome Redux
 > Recipe for integrating with [`react-chrome-redux`](https://github.com/tshaddix/react-chrome-redux)
 
-**NOTE:** This recipe is based communications within [issue #157](https://github.com/prescottprue/react-redux-firebase/issues/157) and is not considered "completed". If you have suggestions, please post an issue or reach out over [gitter](https://gitter.im/redux-firebase/Lobby).
+**NOTE:** This recipe is based communications within [issue #157](https://github.com/nader2560/react-redux-firebase/issues/157) and is not considered "completed". If you have suggestions, please post an issue or reach out over [gitter](https://gitter.im/redux-firebase/Lobby).
 
 Do not use `firebaseConnect` in your content/popup scripts. This is because the `Store` object (the proxyStore in `react-chrome-redux`), is not "composed" with the `reactReduxFirebase` function as it is normally.
 
