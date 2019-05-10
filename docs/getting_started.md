@@ -8,7 +8,7 @@ Install peer dependencies: `npm i --save redux react-redux`
 
 ## Install
 ```bash
-npm install --save react-redux-firebase
+npm install --save react-redux-firebase-immutable
 ```
 
 ## Add Reducer
@@ -18,7 +18,7 @@ Include `firebase` in your combine reducers function:
 
 ```js
 import { combineReducers } from 'redux'
-import { firebaseReducer } from 'react-redux-firebase'
+import { firebaseReducer } from 'react-redux-firebase-immutable'
 
 // Add firebase to reducers
 const rootReducer = combineReducers({
@@ -30,7 +30,7 @@ const rootReducer = combineReducers({
 
 ```js
 import { compose } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import firebase from 'firebase'
 
 // Firebase config
@@ -42,7 +42,7 @@ const firebaseConfig = {
 }
 firebase.initializeApp(firebaseConfig)
 
-// react-redux-firebase options
+// react-redux-firebase-immutable options
 const config = {
   userProfile: 'users', // firebase root where user profiles are stored
   enableLogging: false, // enable/disable Firebase's database logging
@@ -69,7 +69,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 export default compose(
   firebaseConnect((props) => {

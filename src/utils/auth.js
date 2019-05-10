@@ -157,13 +157,13 @@ export const getLoginMethodAndParams = (firebase, creds) => {
 
 /**
  * Returns a promise that completes when Firebase Auth is ready in the given
- * store using react-redux-firebase.
+ * store using react-redux-firebase-immutable.
  * @param {Object} store - The Redux store on which we want to detect if
  * Firebase auth is ready.
  * @param {string} [stateName='firebase'] - The attribute name of the
- * react-redux-firebase reducer when using multiple combined reducers.
+ * react-redux-firebase-immutable reducer when using multiple combined reducers.
  * 'firebase' by default. Set this to `null` to indicate that the
- * react-redux-firebase reducer is not in a combined reducer.
+ * react-redux-firebase-immutable reducer is not in a combined reducer.
  * @return {Promise} Resolves when Firebase auth is ready in the store.
  */
 const isAuthReady = (store, stateName) => {
@@ -174,7 +174,7 @@ const isAuthReady = (store, stateName) => {
     throw new Error(
       `The Firebase auth state could not be found in the store under the attribute '${
         stateName ? `${stateName}.` : ''
-      }auth'. Make sure your react-redux-firebase reducer is correctly set in the store`
+      }auth'. Make sure your react-redux-firebase-immutable reducer is correctly set in the store`
     )
   }
   return firebaseState.auth.isLoaded
@@ -182,12 +182,12 @@ const isAuthReady = (store, stateName) => {
 
 /**
  * Returns a promise that completes when Firebase Auth is ready in the given
- * store using react-redux-firebase.
+ * store using react-redux-firebase-immutable.
  * @param {Object} store - The Redux store on which we want to detect if
  * Firebase auth is ready.
- * @param {string} [stateName='firebase'] - The attribute name of the react-redux-firebase
+ * @param {string} [stateName='firebase'] - The attribute name of the react-redux-firebase-immutable
  * reducer when using multiple combined reducers. 'firebase' by default. Set
- * this to `null` to indicate that the react-redux-firebase reducer is not in a
+ * this to `null` to indicate that the react-redux-firebase-immutable reducer is not in a
  * combined reducer.
  * @return {Promise} Resolve when Firebase auth is ready in the store.
  */

@@ -7,7 +7,7 @@ In order to get the most out of writing your thunks, make sure to set up your th
 ```javascript
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable';
 import makeRootReducer from './reducers';
 
 const fbConfig = {} // your firebase config

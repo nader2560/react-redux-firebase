@@ -5,7 +5,7 @@ If you are using `redux-observable`, make sure to set up your redux-observable m
 Examples below assume that you have setup `redux-observable` middleware so that firebase is available within your epics. Here is an example `combineEpics` function that adds `getFirebase` as the third argument along with an epic that uses it:
 
 ```javascript
-import { getFirebase } from 'react-redux-firebase'
+import { getFirebase } from 'react-redux-firebase-immutable'
 import { combineEpics } from 'redux-observable'
 
 const rootEpic = (...args) =>

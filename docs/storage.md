@@ -58,7 +58,7 @@ Available on `props.firebase` if using `firebaseConnect` HOC or using `getFireba
 ```javascript
 import React from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 const Uploader = ({ firebase }) =>
   <div>
@@ -89,7 +89,7 @@ Access to Firebase's `storage` is available. This is useful for calling methods 
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 class Uploader extends Component {
   static propTypes = {

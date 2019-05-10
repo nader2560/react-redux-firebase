@@ -5,7 +5,7 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 import 'firebase/firestore' // make sure you add this for firestore
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import { reduxFirestore } from 'redux-firestore'
 
 export default function configureStore (initialState, history) {

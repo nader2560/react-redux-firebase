@@ -1,6 +1,6 @@
 # API Reference
 
-Just like [redux](http://redux.js.org/docs/api/index.html), the react-redux-firebase API surface is intentionally as small as possible.
+Just like [redux](http://redux.js.org/docs/api/index.html), the react-redux-firebase-immutable API surface is intentionally as small as possible.
 
 ## Top-Level Exports
 * [firebaseConnect](/docs/api/connect.md#firebaseconnect)
@@ -25,10 +25,10 @@ Every function described above is a top-level export. You can import any of them
 
 ### ES6
 ```js
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 ```
 
 ### ES5 (CommonJS)
 ```js
-var firebaseConnect = require('react-redux-firebase').firebaseConnect
+var firebaseConnect = require('react-redux-firebase-immutable').firebaseConnect
 ```

@@ -1,4 +1,4 @@
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 import { withHandlers, compose } from 'recompose'
 import { UserIsNotAuthenticated } from 'utils/router'
 import { withNotifications } from 'modules/notification'

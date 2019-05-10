@@ -24,7 +24,7 @@ _Basic_
 
 ```javascript
 // props.firebase set on App component as firebase object with helpers
-import { createFirebaseConnect } from 'react-redux-firebase'
+import { createFirebaseConnect } from 'react-redux-firebase-immutable'
 // create firebase connect that uses another redux store
 const firebaseConnect = createFirebaseConnect('anotherStore')
 // use the firebaseConnect to wrap a component
@@ -52,7 +52,7 @@ _Basic_
 
 ```javascript
 // props.firebase set on App component as firebase object with helpers
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 export default firebaseConnect()(App)
 ```
 
@@ -62,7 +62,7 @@ _Ordered Data_
 import React from 'react'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect([
@@ -91,7 +91,7 @@ import React from 'react'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { get } from 'lodash'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect((props) => ([

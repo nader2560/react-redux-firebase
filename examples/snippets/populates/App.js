@@ -8,14 +8,14 @@ import {
   populate,
   isLoaded,
   isEmpty
-} from 'react-redux-firebase'
+} from 'react-redux-firebase-immutable'
 
 // NOTE: In real application don't forget to use Provider from react-redux
 // or firebaseConnect/withFirebase will not work
 function Projects({ projects }) {
   return (
     <div>
-      <h2>react-redux-firebase populate snippet</h2>
+      <h2>react-redux-firebase-immutable populate snippet</h2>
       <div>
         <h4>Projects List</h4>
         {!isLoaded(projects)

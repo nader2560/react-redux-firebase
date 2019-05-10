@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 import './Todo.css'
 
 const TodoItem = ({ firebase, todo, id }) => {

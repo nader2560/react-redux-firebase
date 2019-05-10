@@ -6,7 +6,7 @@ import {
   firebaseConnect,
   isLoaded,
   isEmpty
-} from 'react-redux-firebase'
+} from 'react-redux-firebase-immutable'
 import logo from './logo.svg'
 import TodoItem from './TodoItem'
 import NewTodo from './NewTodo'
@@ -16,7 +16,7 @@ function Home({ todos }) {
   return (
     <div className='App'>
       <div className='App-header'>
-        <h2>react-redux-firebase demo</h2>
+        <h2>react-redux-firebase-immutable demo</h2>
         <img src={logo} className='App-logo' alt='logo' />
       </div>
       <div className='App-todos'>

@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { map } from 'lodash';
 import { compose, withHandlers, setPropTypes } from 'recompose';
-import { firebaseConnect } from 'react-redux-firebase';
+import { firebaseConnect } from 'react-redux-firebase-immutable';
 import Dropzone from 'react-dropzone';
 
 // Path within Database for metadata (also used for file Storage path)

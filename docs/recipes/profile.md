@@ -42,7 +42,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { withFirebase, isLoaded } from 'react-redux-firebase'
+import { withFirebase, isLoaded } from 'react-redux-firebase-immutable'
 
 const UpdateProfilePage = ({ profile, firebase }) => (
   <div>

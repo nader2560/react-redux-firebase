@@ -8,7 +8,7 @@ import {
 } from 'recompose'
 import { withStyles } from '@material-ui/core/styles'
 import { withRouter } from 'react-router-dom'
-import { withFirebase, isEmpty, isLoaded } from 'react-redux-firebase'
+import { withFirebase, isEmpty, isLoaded } from 'react-redux-firebase-immutable'
 import { ACCOUNT_PATH } from 'constants/paths'
 import styles from './Navbar.styles'
 

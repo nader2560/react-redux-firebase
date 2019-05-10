@@ -15,7 +15,7 @@ Queries can be created manually by using `watchEvent` or `watchEvents`. This is 
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 const todosPath = 'todos'
 
@@ -59,7 +59,7 @@ By default the results of queries are stored in redux under the path of the quer
 import React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 function Todos ({ firebase, todos }) {
   return (
@@ -97,7 +97,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 function Todos({ firebase, todos }) {
   // Build Todos list if todos exist and are loaded
@@ -136,7 +136,7 @@ Using [`recompose`](https://github.com/acdlite/recompose) is a nice way to keep 
 ```js
 import { get, some } from 'lodash'
 import LoadingSpinner from 'components/LoadingSpinner' // or wherever your spinner component is
-import { isLoaded } from 'react-redux-firebase'
+import { isLoaded } from 'react-redux-firebase-immutable'
 import {
   compose,
   mapProps,
@@ -176,7 +176,7 @@ That can then be used in HOC compositions to wait for data to load like so:
 import React from 'react'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 function EmptyMessage() {
   return <div>No Projects Found</div>

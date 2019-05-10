@@ -1,6 +1,6 @@
 # Integrations
 
-This section includes some integrations for using `react-redux-firebase` within other libraries.
+This section includes some integrations for using `react-redux-firebase-immutable` within other libraries.
 
 * [react-chrome-redux](/docs/integrations/react-chrome-redux.md)
 * [react-native](/docs/integrations/react-native.md)

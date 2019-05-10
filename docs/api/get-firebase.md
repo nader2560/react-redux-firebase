@@ -13,7 +13,7 @@ _redux-thunk integration_
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import firebase from 'firebase';
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable';
 import makeRootReducer from './reducers';
 
 const fbConfig = {} // your firebase config

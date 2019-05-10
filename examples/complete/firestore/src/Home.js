@@ -7,7 +7,7 @@ import {
   firestoreConnect,
   isLoaded,
   isEmpty
-} from 'react-redux-firebase'
+} from 'react-redux-firebase-immutable'
 import TodoItem from './TodoItem'
 import NewTodo from './NewTodo'
 import './App.css'

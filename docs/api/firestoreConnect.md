@@ -24,7 +24,7 @@ _Basic_
 
 ```javascript
 // props.firebase set on App component as firebase object with helpers
-import { createFirestoreConnect } from 'react-redux-firebase'
+import { createFirestoreConnect } from 'react-redux-firebase-immutable'
 // create firebase connect that uses another redux store
 const firestoreConnect = createFirestoreConnect('anotherStore')
 // use the firebaseConnect to wrap a component
@@ -54,7 +54,7 @@ _Basic_
 
 ```javascript
 // props.firebase set on App component as firebase object with helpers
-import { firestoreConnect } from 'react-redux-firebase'
+import { firestoreConnect } from 'react-redux-firebase-immutable'
 export default firestoreConnect()(SomeComponent)
 ```
 
@@ -62,7 +62,7 @@ _Basic_
 
 ```javascript
 import { connect } from 'react-redux'
-import { firestoreConnect } from 'react-redux-firebase'
+import { firestoreConnect } from 'react-redux-firebase-immutable'
 
 // pass todos list from redux as props.todosList
 export default compose(

@@ -20,15 +20,15 @@
 
 ### Pass In Firebase instance
 
-If you would like to instantiate a Firebase instance outside of `react-redux-firebase`, you can pass it in as the first argument like so:
+If you would like to instantiate a Firebase instance outside of `react-redux-firebase-immutable`, you can pass it in as the first argument like so:
 
 **`v1.*.*`**
 
 ```js
 import { compose, createStore } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 const fbConfig = {} // object containing Firebase config
-const rrfConfig = { userProfile: 'users' } // react-redux-firebase config
+const rrfConfig = { userProfile: 'users' } // react-redux-firebase-immutable config
 
 const store = createStore(
  reducer,
@@ -47,12 +47,12 @@ const store = createStore(
 
 ```js
 import { createStore, combineReducers, compose } from 'redux'
-import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase'
+import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase-immutable'
 import firebase from 'firebase'
 // import 'firebase/firestore' // <- needed if using firestore
 
 const fbConfig = {} // object containing Firebase config
-const rrfConfig = { userProfile: 'users' } // react-redux-firebase config
+const rrfConfig = { userProfile: 'users' } // react-redux-firebase-immutable config
 
 // initialize firebase instance
 firebase.initializeApp(fbConfig) // <- new to v2.*.*
@@ -82,7 +82,7 @@ const store = createStore(
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, dataToJS, pathToJS } from 'react-redux-firebase';
+import { firebaseConnect, dataToJS, pathToJS } from 'react-redux-firebase-immutable';
 
 const enhance = compose(
   firebaseConnect(['todos']),
@@ -102,7 +102,7 @@ export default enhance(SomeComponent)
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect } from 'react-redux-firebase';
+import { firebaseConnect } from 'react-redux-firebase-immutable';
 
 const enhance = compose(
   firebaseConnect(['todos']),
@@ -125,7 +125,7 @@ export default enhance(SomeComponent)
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, getVal } from 'react-redux-firebase'
+import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect(['/todos/user1']),
@@ -145,7 +145,7 @@ Routing logic, including HOCs made with `redux-auth-wrapper` must be updated. Th
 ```javascript
 import { browserHistory } from 'react-router'
 import { UserAuthWrapper } from 'redux-auth-wrapper'
-import { pathToJS } from 'react-redux-firebase'
+import { pathToJS } from 'react-redux-firebase-immutable'
 
 export const UserIsAuthenticated = UserAuthWrapper({
   wrapperDisplayName: 'UserIsAuthenticated',
@@ -192,7 +192,7 @@ See [the routing recipes](/docs/recipes/routing) for more details and examples w
 
 ### Use Firestore {#firestore}
 
-If you would like to instantiate a Firebase instance outside of `react-redux-firebase`, you can pass it in as the first argument like so:
+If you would like to instantiate a Firebase instance outside of `react-redux-firebase-immutable`, you can pass it in as the first argument like so:
 
 **`v1.*.*`**
 
@@ -206,13 +206,13 @@ v1 does not support Firestore usage
 
   ```js
   import { createStore, combineReducers, compose } from 'redux'
-  import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase'
+  import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase-immutable'
   import { reduxFirestore, firestoreReducer } from 'redux-firestore'
   import firebase from 'firebase'
   import 'firebase/firestore' // <- needed if using firestore
 
   const fbConfig = {} // object containing Firebase config
-  const rrfConfig = { userProfile: 'users' } // react-redux-firebase config
+  const rrfConfig = { userProfile: 'users' } // react-redux-firebase-immutable config
 
   // initialize firebase instance
   firebase.initializeApp(config) // <- new to v2.*.*
@@ -248,7 +248,7 @@ import {
   firebaseConnect,
   populatedDataToJS,
   pathToJS
-} from 'react-redux-firebase';
+} from 'react-redux-firebase-immutable';
 
 const populates = [{ child: 'owner', root: 'users' }]
 
@@ -273,7 +273,7 @@ export default enhance(SomeComponent)
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, populate } from 'react-redux-firebase'
+import { firebaseConnect, populate } from 'react-redux-firebase-immutable'
 
 const populates = [{ child: 'owner', root: 'users' }]
 
@@ -304,7 +304,7 @@ import {
   firebaseConnect,
   populatedDataToJS,
   pathToJS
-} from 'react-redux-firebase';
+} from 'react-redux-firebase-immutable';
 
 const populates = [{ child: 'owner', root: 'users' }]
 
@@ -333,7 +333,7 @@ const enhance = compose(
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect } from 'react-redux-firebase';
+import { firebaseConnect } from 'react-redux-firebase-immutable';
 
 const enhance = compose(
   firebaseConnect(
@@ -351,7 +351,7 @@ const enhance = compose(
 
 ### Empty Auth {#emptyAuth}
 
-`enableEmptyAuthChanges`, which was created for [#137](https://github.com/prescottprue/react-redux-firebase/issues/137) no longer exists. It has been replaced by `preserveOnEmptyAuthChange` so that an action is still dispatched, and configuration can control what is preserved:
+`enableEmptyAuthChanges`, which was created for [#137](https://github.com/prescottprue/react-redux-firebase-immutable/issues/137) no longer exists. It has been replaced by `preserveOnEmptyAuthChange` so that an action is still dispatched, and configuration can control what is preserved:
 
 **`v1.*.*`**
 
@@ -406,7 +406,7 @@ View the [redux-persist](/docs/recipes/redux-persist) section for the full examp
 
 ```js
 import { compose, createStore } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import { persistStore, autoRehydrate } from 'redux-persist'
 import * as firebase from 'firebase'
 

@@ -1,13 +1,13 @@
 # Redux Saga Recipes
 
-In order to use `react-redux-firebase` instance within sagas, pass it as the second argument of the run function `sagaMiddleware.run(helloSaga, getFirebase)`.
+In order to use `react-redux-firebase-immutable` instance within sagas, pass it as the second argument of the run function `sagaMiddleware.run(helloSaga, getFirebase)`.
 
 ### Example
 
 ```javascript
 import { applyMiddleware, compose, createStore } from 'redux'
 import { browserHistory } from 'react-router'
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable'
 import makeRootReducer from './reducers'
 import createSagaMiddleware from 'redux-saga'
 import firebase from 'firebase/app';

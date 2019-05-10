@@ -1,11 +1,11 @@
 {
-  "name": "react-redux-firebase-webpack2-example",
+  "name": "react-redux-firebase-immutable-webpack2-example",
   "version": "0.0.0",
   "dependencies": {
     "react": "15.4.1",
     "react-dom": "15.4.1",
     "react-redux": "^5.0.5",
-    "react-redux-firebase": "^1.2.5"
+    "react-redux-firebase-immutable": "^1.2.5"
   },
   "devDependencies": {
     "babel-core": "6.18.2",

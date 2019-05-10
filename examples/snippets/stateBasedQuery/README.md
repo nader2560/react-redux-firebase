@@ -2,7 +2,7 @@
 
 This example shows using data from redux state to make a query based on props (also known as a dynamic query). A good example of this is querying based on the current user's UID.
 
-**Note:** Example does not use routing, which is what will commonly be used when creating a full application. For how to build with routing, please view [the routing recipes section of the docs.](https://react-redux-firebase.com/docs/recipes/routing.html)
+**Note:** Example does not use routing, which is what will commonly be used when creating a full application. For how to build with routing, please view [the routing recipes section of the docs.](https://react-redux-firebase-immutable.com/docs/recipes/routing.html)
 
 ## What It Does
 

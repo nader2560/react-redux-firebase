@@ -23,7 +23,7 @@ needing to access a firebase instance created under a different store key.
 _Basic_
 
 ```javascript
-import { createWithFirestore } from 'react-redux-firebase'
+import { createWithFirestore } from 'react-redux-firebase-immutable'
 
 // create withFirestore that uses another redux store
 const withFirestore = createWithFirestore('anotherStore')
@@ -51,7 +51,7 @@ _Basic_
 
 ```javascript
 import React from 'react'
-import { withFirestore } from 'react-redux-firebase'
+import { withFirestore } from 'react-redux-firebase-immutable'
 
 function AddTodo({ firestore: { add } }) {
   return (
@@ -72,7 +72,7 @@ _Within HOC Composition_
 import React from 'react'
 import { compose } from 'redux' // can also come from recompose
 import { withHandlers } from 'recompose'
-import { withFirestore } from 'react-redux-firebase'
+import { withFirestore } from 'react-redux-firebase-immutable'
 
 function AddTodo({ addTodo }) {
   return (

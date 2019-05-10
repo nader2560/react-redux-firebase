@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { map } from 'lodash'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 import TodoItem from './TodoItem'
 
 function renderList(list) {
@@ -18,7 +18,7 @@ function Home({ incompleteTodos, completeTodos }) {
   return (
     <div>
       <div>
-        <h2>react-redux-firebase multiple queries demo</h2>
+        <h2>react-redux-firebase-immutable multiple queries demo</h2>
       </div>
       <div>
         <h4>Incomplete Todos</h4>

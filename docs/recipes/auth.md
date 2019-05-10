@@ -9,7 +9,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 // import GoogleButton from 'react-google-button' // optional
 
 function LoginPage ({ firebase, auth }) {
@@ -54,7 +54,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 function AuthPage ({ firebase, auth }) {
   if (!isLoaded(auth)) {
@@ -134,7 +134,7 @@ Waiting for auth to be ready is usually only required in an SSR environment.
 ```js
 import firebase from 'firebase'
 import { compose, createStore, applyMiddleware } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 
 // Firebase config
 const fbConfig = {
@@ -143,7 +143,7 @@ const fbConfig = {
   databaseURL: '<your-database-url>',
   storageBucket: '<your-storage-bucket>'
 }
-// react-redux-firebase options
+// react-redux-firebase-immutable options
 const rrfConfig = {
   userProfile: 'users', // firebase root where user profiles are stored
   attachAuthIsReady: true, // attaches auth is ready promise to store

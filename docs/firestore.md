@@ -1,9 +1,9 @@
 # Firestore
 
-The Firestore integration is build on [`redux-firestore`](https://github.com/prescottprue/redux-firestore). Auth, Storage, and RTDB interactions still go on within `react-redux-firebase`, while `redux-firestore` handles attaching listeners and updating state for Firestore.
+The Firestore integration is build on [`redux-firestore`](https://github.com/prescottprue/redux-firestore). Auth, Storage, and RTDB interactions still go on within `react-redux-firebase-immutable`, while `redux-firestore` handles attaching listeners and updating state for Firestore.
 
-To begin using Firestore with `react-redux-firebase`, make sure you have the following:
-* `v2.0.0` or higher of `react-redux-firebase`
+To begin using Firestore with `react-redux-firebase-immutable`, make sure you have the following:
+* `v2.0.0` or higher of `react-redux-firebase-immutable`
 * Install `redux-firestore` in your project using `npm i --save redux-firestore@latest`
 * `firestore` imported with `import 'firebase/firestore'`
 * `firestore` initialize with `firebase.firestore()`
@@ -18,10 +18,10 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 import 'firebase/firestore' // make sure you add this for firestore
-import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase'
+import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase-immutable'
 import { reduxFirestore, firestoreReducer } from 'redux-firestore'
 
-// react-redux-firebase config
+// react-redux-firebase-immutable config
 const rrfConfig = {
   userProfile: 'users',
   // useFirestoreForProfile: true // Firestore for Profile instead of Realtime DB
@@ -58,7 +58,7 @@ If you would like to have your users profiles go to Firestore instead of Real Ti
 `useFirestoreForProfile` option when making store creator like so:
 
 ```js
-// react-redux-firebase config
+// react-redux-firebase-immutable config
 const rrfConfig = {
   userProfile: 'users',
   useFirestoreForProfile: true // Firestore for Profile instead of Realtime DB
@@ -82,7 +82,7 @@ Firestore queries can be created in two ways:
   ```js
   import { compose } from 'redux'
   import { connect } from 'react-redux'
-  import { firestoreConnect } from 'react-redux-firebase'
+  import { firestoreConnect } from 'react-redux-firebase-immutable'
 
   export default compose(
     firestoreConnect(['todos']), // or { collection: 'todos' }
@@ -97,7 +97,7 @@ Firestore queries can be created in two ways:
   ```js
   import { compose } from 'redux'
   import { connect } from 'react-redux'
-  import { firestoreConnect } from 'react-redux-firebase'
+  import { firestoreConnect } from 'react-redux-firebase-immutable'
 
   export default compose(
     firestoreConnect((props) => [
@@ -163,7 +163,7 @@ It is common to make react components "stateless" meaning that the component is 
 
 ```js
 import { compose } from 'redux'
-import { withFirestore, isLoaded, isEmpty } from 'react-redux-firebase'
+import { withFirestore, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 const Todos = ({ firestore, todos }) => (
   <div>
@@ -195,7 +195,7 @@ This can be useful, but then can limit usage of lifecycle hooks and other featur
 
 ```js
 import { connect } from 'react-redux'
-import { withFirestore } from 'react-redux-firebase'
+import { withFirestore } from 'react-redux-firebase-immutable'
 import { compose, withHandlers, lifecycle } from 'recompose'
 
 const enhance = compose(
@@ -230,7 +230,7 @@ By default the results of queries are stored in redux under the path of the quer
 ```js
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firestoreConnect } from 'react-redux-firebase'
+import { firestoreConnect } from 'react-redux-firebase-immutable'
 const myProjectsReduxName = 'myProjects'
 
 compose(

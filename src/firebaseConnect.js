@@ -18,7 +18,7 @@ import { v3ErrorMessage } from './constants'
  * @return {Function} - HOC that accepts a watchArray and wraps a component
  * @example <caption>Basic</caption>
  * // props.firebase set on App component as firebase object with helpers
- * import { createFirebaseConnect } from 'react-redux-firebase'
+ * import { createFirebaseConnect } from 'react-redux-firebase-immutable'
  * // create firebase connect that uses another redux store
  * const firebaseConnect = createFirebaseConnect('anotherStore')
  * // use the firebaseConnect to wrap a component
@@ -42,7 +42,7 @@ export const createFirebaseConnect = (storeKey = 'store') => (
     componentWillMount() {
       // Throw if using with react-redux@^6
       if (!this.context || !this.context[storeKey]) {
-        // Use react-redux-firebase@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
+        // Use react-redux-firebase-immutable@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
         throw new Error(v3ErrorMessage)
       }
       const { firebase, dispatch } = this.store
@@ -115,13 +115,13 @@ export const createFirebaseConnect = (storeKey = 'store') => (
  * @return {Function} - that accepts a component to wrap and returns the wrapped component
  * @example <caption>Basic</caption>
  * // props.firebase set on App component as firebase object with helpers
- * import { firebaseConnect } from 'react-redux-firebase'
+ * import { firebaseConnect } from 'react-redux-firebase-immutable'
  * export default firebaseConnect()(App)
  * @example <caption>Ordered Data</caption>
  * import React from 'react'
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect } from 'react-redux-firebase'
+ * import { firebaseConnect } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect([
@@ -146,7 +146,7 @@ export const createFirebaseConnect = (storeKey = 'store') => (
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
  * import { get } from 'lodash'
- * import { firebaseConnect } from 'react-redux-firebase'
+ * import { firebaseConnect } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect((props) => ([

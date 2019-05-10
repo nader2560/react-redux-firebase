@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'
 import { pick, some } from 'lodash'
 import { ActivityIndicator } from 'react-native';
-import { isLoaded } from 'react-redux-firebase'
+import { isLoaded } from 'react-redux-firebase-immutable'
 import {
   compose,
   withContext,
@@ -35,7 +35,7 @@ export const spinnerWhile = condition =>
  * @example Spinner While Data Loading
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect } from 'react-redux-firebase'
+ * import { firebaseConnect } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect(['projects']),

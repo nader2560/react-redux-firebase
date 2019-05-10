@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { withStateHandlers, withHandlers } from 'recompose'
-import { withFirestore } from 'react-redux-firebase'
+import { withFirestore } from 'react-redux-firebase-immutable'
 import './App.css'
 
 const enhance = compose(

@@ -1,6 +1,6 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable'
 import firebase from 'firebase/app'
 import 'firebase/database'
 import 'firebase/auth'
@@ -14,7 +14,7 @@ import {
 
 export default (initialState = {}) => {
   // ======================================================
-  // Redux + Firebase Config (react-redux-firebase & redux-firestore)
+  // Redux + Firebase Config (react-redux-firebase-immutable & redux-firestore)
   // ======================================================
   const defaultRRFConfig = {
     userProfile: 'users', // root that user profiles are written to

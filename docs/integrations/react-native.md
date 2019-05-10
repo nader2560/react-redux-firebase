@@ -1,6 +1,6 @@
 # React Native
 
-Connecting to Firebase through react-native can be done with the default Firebase javascript library, or through native modules. Libraries such as [react-native-firebase](https://github.com/invertase/react-native-firebase) that preserve Firebase's web library syntax while providing access to native modules can be used with `react-redux-firebase`.
+Connecting to Firebase through react-native can be done with the default Firebase javascript library, or through native modules. Libraries such as [react-native-firebase](https://github.com/invertase/react-native-firebase) that preserve Firebase's web library syntax while providing access to native modules can be used with `react-redux-firebase-immutable`.
 
 Regardless of which path you want to take, initial setup is the same, so we will begin there. Below are separate sections for the two different setups ([native](#native-modules) or [web](#jsweb)).
 
@@ -8,7 +8,7 @@ Regardless of which path you want to take, initial setup is the same, so we will
 
 ## JS/Web
 
-Setup and use `react-redux-firebase` as normal (described in the [use section of the README](https://github.com/prescottprue/react-redux-firebase#use)). Since Firebase is initialized outside of react-redux-firebase, the automatic handling of react-native done by Firebase works.
+Setup and use `react-redux-firebase-immutable` as normal (described in the [use section of the README](https://github.com/prescottprue/react-redux-firebase#use)). Since Firebase is initialized outside of react-redux-firebase-immutable, the automatic handling of react-native done by Firebase works.
 
 [react-native complete example app](https://github.com/prescottprue/react-redux-firebase/tree/master/examples/complete/react-native)
 
@@ -28,7 +28,7 @@ Passing in an instance also allows for libraries with similar APIs (such as [`re
   ```js
   import { compose, createStore } from 'redux';
   import RNFirebase from 'react-native-firebase';
-  import { getFirebase, reactReduxFirebase } from 'react-redux-firebase';
+  import { getFirebase, reactReduxFirebase } from 'react-redux-firebase-immutable';
   import thunk from 'redux-thunk';
   import makeRootReducer from './reducers';
 

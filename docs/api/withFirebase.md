@@ -24,7 +24,7 @@ _Basic_
 
 ```javascript
 // props.firebase set on App component as firebase object with helpers
-import { createWithFirebase } from 'react-redux-firebase'
+import { createWithFirebase } from 'react-redux-firebase-immutable'
 
 // create withFirebase that uses another redux store
 const withFirebase = createWithFirebase('anotherStore')
@@ -54,7 +54,7 @@ _Basic_
 
 ```javascript
 import React from 'react'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 function AddTodo({ firebase: { push } }) {
   return (
@@ -75,7 +75,7 @@ _Within HOC Composition_
 import React from 'react'
 import { compose } from 'redux' // can also come from recompose
 import { withHandlers } from 'recompose'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 function AddTodo({ addTodo }) {
   return (

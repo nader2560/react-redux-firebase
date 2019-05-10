@@ -8,7 +8,7 @@ Usage with [redux-persist](https://github.com/rt2zz/redux-persist) depends on wh
 
 ```js
 import { createStore, compose } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
@@ -76,7 +76,7 @@ export default function locationReducer(state = initialState, action) {
 
 ```js
 import { combineReducers } from 'redux'
-import { firebaseReducer as firebase } from 'react-redux-firebase'
+import { firebaseReducer as firebase } from 'react-redux-firebase-immutable'
 import { persistReducer } from 'redux-persist'
 import localStorage from 'redux-persist/lib/storage' // defaults to localStorage for web and AsyncStorage for react-native
 import hardSet from 'redux-persist/lib/stateReconciler/hardSet'
@@ -128,7 +128,7 @@ redux-persist `v4.*.*` is supported out of the box, meaning no transforms are re
 import { applyMiddleware, compose, createStore } from 'redux'
 import { browserHistory } from 'react-router'
 import firebase from 'firebase'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import { persistStore, autoRehydrate } from 'redux-persist'
 import {
   firebase as firebaseConfig,

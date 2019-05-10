@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { withHandlers, branch, renderNothing } from 'recompose'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 import './Todo.css'
 

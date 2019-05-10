@@ -16,7 +16,7 @@ import { v3ErrorMessage } from './constants'
  * @return {Function} - Higher Order Component which accepts an array of
  * watchers config and wraps a React Component
  * @example <caption>Basic</caption>
- * import { createWithFirestore } from 'react-redux-firebase'
+ * import { createWithFirestore } from 'react-redux-firebase-immutable'
  *
  * // create withFirestore that uses another redux store
  * const withFirestore = createWithFirestore('anotherStore')
@@ -37,7 +37,7 @@ export const createWithFirestore = (storeKey = 'store') => WrappedComponent => {
     render() {
       // Throw if using with react-redux@^6
       if (!this.context || !this.context[storeKey]) {
-        // Use react-redux-firebase@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
+        // Use react-redux-firebase-immutable@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
         throw new Error(v3ErrorMessage)
       }
       return (
@@ -66,7 +66,7 @@ export const createWithFirestore = (storeKey = 'store') => WrappedComponent => {
  * wrapped component
  * @example <caption>Basic</caption>
  * import React from 'react'
- * import { withFirestore } from 'react-redux-firebase'
+ * import { withFirestore } from 'react-redux-firebase-immutable'
  *
  * function AddTodo({ firestore: { add } }) {
  *   return (
@@ -83,7 +83,7 @@ export const createWithFirestore = (storeKey = 'store') => WrappedComponent => {
  * import React from 'react'
  * import { compose } from 'redux' // can also come from recompose
  * import { withHandlers } from 'recompose'
- * import { withFirestore } from 'react-redux-firebase'
+ * import { withFirestore } from 'react-redux-firebase-immutable'
  *
  * function AddTodo({ addTodo }) {
  *   return (

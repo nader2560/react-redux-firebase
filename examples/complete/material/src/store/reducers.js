@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { firebaseReducer as firebase } from 'react-redux-firebase'
+import { firebaseReducer as firebase } from 'react-redux-firebase-immutable'
 import { reducer as form } from 'redux-form'
 import { reducer as notifications } from 'modules/notification'
 import locationReducer from './location'

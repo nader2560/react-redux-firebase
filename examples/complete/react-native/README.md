@@ -1,4 +1,4 @@
-# react-native + react-redux-firebase Complete Example
+# react-native + react-redux-firebase-immutable Complete Example
 
 ## Getting Started
 
@@ -21,7 +21,7 @@
 ├─ store.js                 # Redux Store setup
 ├─ reducer.js               # Redux Reducer Setup
 ├─ screens                  # Development helper scripts
-│  └── HomeScreen.js       # Home view with example react-redux-firebase code
+│  └── HomeScreen.js       # Home view with example react-redux-firebase-immutable code
 ├- ios                      # Platform specific code, config and dependencies for iOS
 │  ├─ GoogleService-info.plist # iOS app config file downloaded from Firebase
 ├─ scripts                  # Development helper scripts
@@ -36,7 +36,7 @@ This project was created with `expo`, so you can create your own by doing the fo
 1. Make sure you have [expo installed](https://docs.expo.io/versions/v32.0.0/introduction/installation/) (`npm install -g expo-cli`)
 1. Run `expo init`
 1. Follow instructions which say to enter the folder and call `yarn start` or `npm start` (you can shut off for now or open another teminal window)
-1. Install `react-redux-firebase`: `yarn add redux react-redux@^5.0.0 react-redux-firebase` (this example also uses `recompose` for convience, but it isn't nessesary)
+1. Install `react-redux-firebase-immutable`: `yarn add redux react-redux@^5.0.0 react-redux-firebase-immutable` (this example also uses `recompose` for convience, but it isn't nessesary)
 1. In App.js (the base of the app) add the following:
     ```js
     import { Provider } from 'react-redux'
@@ -54,5 +54,5 @@ This project was created with `expo`, so you can create your own by doing the fo
       <AppNavigator />
     </Provider>
     ```
-1. Now your components can use `firebaseConnect`, `firestoreConnect`, `withFirebase` and the other HOCs provided by react-redux-firebase
+1. Now your components can use `firebaseConnect`, `firestoreConnect`, `withFirebase` and the other HOCs provided by react-redux-firebase-immutable
 

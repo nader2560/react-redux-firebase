@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { firebaseStateReducer } from 'react-redux-firebase'
+import { firebaseStateReducer } from 'react-redux-firebase-immutable'
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({

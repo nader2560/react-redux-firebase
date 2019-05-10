@@ -5,7 +5,7 @@
 
 Do not use `firebaseConnect` in your content/popup scripts. This is because the `Store` object (the proxyStore in `react-chrome-redux`), is not "composed" with the `reactReduxFirebase` function as it is normally.
 
-Use `react-redux-firebase` in the background script, and communicate with your content/popup using the proxy store and aliases.
+Use `react-redux-firebase-immutable` in the background script, and communicate with your content/popup using the proxy store and aliases.
 
 Following this pattern allows authenticating the user from the popup:
 
@@ -27,13 +27,13 @@ const store = new Store({
 // Do not call firebaseConnect here
 export default connect(null, { login })(LoginForm);
 ```
-Then, create your alias in the background script, import `react-redux-firebase` as well as `redux-thunk` to wait for Firebase's reply before updating the state (see reply in [ issue #84 on react-chrome-redux](https://github.com/tshaddix/react-chrome-redux/issues/84)).
+Then, create your alias in the background script, import `react-redux-firebase-immutable` as well as `redux-thunk` to wait for Firebase's reply before updating the state (see reply in [ issue #84 on react-chrome-redux](https://github.com/tshaddix/react-chrome-redux/issues/84)).
 
 ```js
 // in event (background script)
 // ...
 import thunk from 'redux-thunk'
-import { reactReduxFirebase, getFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable'
 // ...
 // Add redux Firebase to compose
 const createStoreWithFirebase = compose(

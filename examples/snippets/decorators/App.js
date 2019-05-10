@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 import TodoItem from './TodoItem'
 
 @firebaseConnect([
@@ -30,7 +30,7 @@ export default class App extends Component {
     return (
       <div>
         <div className="App-header">
-          <h2>react-redux-firebase decorators demo</h2>
+          <h2>react-redux-firebase-immutable decorators demo</h2>
         </div>
         <div className="App-todos">
           <h4>Todos List</h4>

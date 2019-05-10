@@ -3,7 +3,7 @@
  * @type {String}
  * @description Prefix for all actions within library
  * @example
- * import { constants } from 'react-redux-firebase'
+ * import { constants } from 'react-redux-firebase-immutable'
  * constants.actionsPrefix === '@@reactReduxFirebase' // true
  */
 export const actionsPrefix = '@@reactReduxFirebase'
@@ -53,7 +53,7 @@ export const actionsPrefix = '@@reactReduxFirebase'
  * @property {String} AUTH_LINK_SUCCESS - `@@reactReduxFirebase/AUTH_LINK_SUCCESS`
  * @property {String} AUTH_EMPTY_CHANGE - `@@reactReduxFirebase/AUTH_LINK_SUCCESS`
  * @example
- * import { actionTypes } from 'react-redux-firebase'
+ * import { actionTypes } from 'react-redux-firebase-immutable'
  * actionTypes.SET === '@@reactReduxFirebase/SET' // true
  */
 export const actionTypes = {
@@ -249,7 +249,7 @@ export const topLevelPaths = ['auth', 'profile', 'ordered', 'data']
  * @private
  */
 export const v3ErrorMessage =
-  'Context from react-redux not found. If you are using react-redux v6 a v3.*.* version of react-redux-firebase is required. Please checkout the v3 migration guide: http://bit.ly/2SRNdiO'
+  'Context from react-redux not found. If you are using react-redux v6 a v3.*.* version of react-redux-firebase-immutable is required. Please checkout the v3 migration guide: http://bit.ly/2SRNdiO'
 
 export default {
   actionTypes,

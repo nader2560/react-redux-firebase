@@ -2,7 +2,7 @@ import React from 'react'
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { branch, renderComponent } from 'recompose';
-import { isLoaded, isEmpty, firebaseConnect } from 'react-redux-firebase';
+import { isLoaded, isEmpty, firebaseConnect } from 'react-redux-firebase-immutable';
 import { View, Text, StyleSheet, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { spinnerWhileLoading } from './utils';
 import NewTodo from './NewTodo';

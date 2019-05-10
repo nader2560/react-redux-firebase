@@ -201,7 +201,7 @@ function createStorageStub() {
 /**
  * @param {Object} otherConfig - Config to be spread onto _.config object
  * @returns {Object} Stubbed version of Firebase JS SDK extended with
- * react-redux-firebase config
+ * react-redux-firebase-immutable config
  */
 export function createFirebaseStub(otherConfig = {}) {
   return {

@@ -28,7 +28,7 @@ _Basic_
 ```javascript
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, getVal } from 'react-redux-firebase'
+import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect(['todos/user1']),
@@ -44,7 +44,7 @@ _Base Paths_
 
 ```javascript
 import { connect } from 'react-redux'
-import { firebaseConnect, getVal } from 'react-redux-firebase'
+import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
 
 export default connect(({ firebase }) => ({
   // this.props.auth loaded from state.firebase.auth
@@ -58,7 +58,7 @@ _Default Value_
 ```javascript
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, getVal } from 'react-redux-firebase'
+import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
 
 const defaultValue = {
  1: {
@@ -96,7 +96,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect(['todos']),
@@ -145,7 +145,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, isEmpty, isLoaded } from 'react-redux-firebase'
+import { firebaseConnect, isEmpty, isLoaded } from 'react-redux-firebase-immutable'
 
 const enhance = compose(
   firebaseConnect(['todos']),
@@ -195,7 +195,7 @@ _Basic_
 ```javascript
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const populates = [{ child: 'owner', root: 'users' }]
 
 const enhance = compose(

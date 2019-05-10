@@ -14,7 +14,7 @@ along side applyMiddleware.
 
 -   `firebaseInstance` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Initiated firebase instance (can also
     be library following Firebase JS API such as `react-native-firebase`)
--   `config` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Containing react-redux-firebase specific configuration
+-   `config` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Containing react-redux-firebase-immutable specific configuration
     -   `config.userProfile` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Location on firebase to store user profiles
     -   `config.enableLogging` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Whether or not to enable Firebase database logging.
         **Note**: Only works if instance has enableLogging function.
@@ -75,7 +75,7 @@ _Setup_
 
 ```javascript
 import { createStore, compose } from 'redux'
-import { reactReduxFirebase } from 'react-redux-firebase'
+import { reactReduxFirebase } from 'react-redux-firebase-immutable'
 import * as firebase from 'firebase'
 
 // React Redux Firebase Config
@@ -88,7 +88,7 @@ const config = {
 const fbConfg = {} // firebase config object
 firebase.initializeApp(fbConfig)
 
-// Add react-redux-firebase to compose
+// Add react-redux-firebase-immutable to compose
 // Note: In full projects this will often be within createStore.js or store.js
 const createStoreWithFirebase = compose(
  reactReduxFirebase(firebase, config),

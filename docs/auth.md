@@ -23,7 +23,7 @@ All examples below assume you have passed `firebase` from `context` to props. Wr
 
 ```js
 import React from 'react'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 function SomeComponent (props) {
   return (
@@ -38,7 +38,7 @@ Works same with class components (make sure you import `Component` from react):
 
 ```js
 import React, { Component } from 'react'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 class SomeComponent extends Component {
   render() {
@@ -206,7 +206,7 @@ createNewUser({
 Logout from Firebase and delete all data from the store (`state.firebase.data` and `state.firebase.auth` are set to `null`).
 
 
-Looking to preserve data on logout? [`v2.0.0` supports the `preserve` config option](http://docs.react-redux-firebase.com/history/v2.0.0/docs/api/enhancer.html), which preserves data under the specified keys in state on logout.
+Looking to preserve data on logout? [`v2.0.0` supports the `preserve` config option](http://docs.react-redux-firebase-immutable.com/history/v2.0.0/docs/api/enhancer.html), which preserves data under the specified keys in state on logout.
 
 ##### Examples
 

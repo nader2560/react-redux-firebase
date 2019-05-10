@@ -15,7 +15,7 @@ Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 **Examples**
 
 ```javascript
-import { constants } from 'react-redux-firebase'
+import { constants } from 'react-redux-firebase-immutable'
 constants.actionsPrefix === '@@reactReduxFirebase' // true
 ```
 
@@ -69,7 +69,7 @@ Object containing all action types
 **Examples**
 
 ```javascript
-import { actionTypes } from 'react-redux-firebase'
+import { actionTypes } from 'react-redux-firebase-immutable'
 actionTypes.SET === '@@reactReduxFirebase/SET' // true
 ```
 

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, Text, TouchableOpacity, Button } from 'react-native'
 import { compose, withHandlers } from 'recompose'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 import { connect } from 'react-redux'
 
 const enhance = compose(

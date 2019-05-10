@@ -29,7 +29,7 @@
       // Config from Firebase console
     }
 
-    // Overrides for for react-redux-firebase/redux-firestore config
+    // Overrides for for react-redux-firebase-immutable/redux-firestore config
     export const reduxFirebase = {}
 
     export default {

@@ -50,7 +50,7 @@ _Basic_
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const Example = ({ firebase: { set } }) => (
   <button onClick={() => set('some/path', { here: 'is a value' })}>
     Set To Firebase
@@ -93,7 +93,7 @@ _Basic_
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const Example = ({ firebase: { push } }) => (
   <button onClick={() => push('some/path', true)}>
     Push To Firebase
@@ -134,7 +134,7 @@ _Basic_
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const Example = ({ firebase: { update } }) => (
   <button onClick={() => update('some/path', { here: 'is a value' })}>
     Update To Firebase
@@ -179,7 +179,7 @@ _Basic_
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const Example = ({ firebase: { remove } }) => (
   <button onClick={() => remove('some/path')}>
     Remove From Firebase
@@ -209,7 +209,7 @@ _Basic_
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 const Example = ({ firebase: { uniqueSet } }) => (
   <button onClick={() => uniqueSet('some/unique/path', true)}>
     Unique Set To Firebase

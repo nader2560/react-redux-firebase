@@ -15,7 +15,7 @@ import {
 
 /**
  * @name firebaseReducer
- * @description Main reducer for react-redux-firebase. This function is called
+ * @description Main reducer for react-redux-firebase-immutable. This function is called
  * automatically by redux every time an action is fired. Based on which action
  * is called and its payload, the reducer will update redux state with relevant
  * changes. `firebaseReducer` is made up of multiple "slice reducers"

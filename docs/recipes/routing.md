@@ -11,7 +11,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { isLoaded, isEmpty } from 'react-redux-firebase'
+import { isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 class ProtectedPage extends Component {
   static propTypes = {
@@ -187,7 +187,7 @@ Can then be used on a Login route component:
 ```javascript
 import React from 'react'
 import { compose } from 'redux'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 const Login = ({ firebase }) => (
   <div>

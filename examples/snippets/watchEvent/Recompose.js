@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { isLoaded, isEmpty, withFirebase } from 'react-redux-firebase'
+import { isLoaded, isEmpty, withFirebase } from 'react-redux-firebase-immutable'
 import { compose, lifecycle, pure } from 'recompose'
 
 const SomeThing = ({ todos }) => {

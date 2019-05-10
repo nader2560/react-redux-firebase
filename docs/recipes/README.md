@@ -1,6 +1,6 @@
 # Recipes
 
-This section includes some recipes for using `react-redux-firebase` within real applications.
+This section includes some recipes for using `react-redux-firebase-immutable` within real applications.
 
 ## [Profile](/docs/recipes/profile.md)
 Recipes for using/modifying built in profile handling.

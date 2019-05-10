@@ -11,7 +11,7 @@ Populate the owner of each item in a todos list from the 'users' root.
 ```javascript
 import { compose } from 'redux'
 import { connect } from 'react-redux'
-import { firebaseConnect, populate } from 'react-redux-firebase'
+import { firebaseConnect, populate } from 'react-redux-firebase-immutable'
 
 const populates = [
   { child: 'owner', root: 'users' }

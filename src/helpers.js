@@ -32,7 +32,7 @@ import { getDotStrPath } from './utils/reducers'
  * @example <caption>Basic</caption>
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect, getVal } from 'react-redux-firebase'
+ * import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect(['todos/user1']),
@@ -44,7 +44,7 @@ import { getDotStrPath } from './utils/reducers'
  * export default enhance(SomeComponent)
  * @example <caption>Base Paths</caption>
  * import { connect } from 'react-redux'
- * import { firebaseConnect, getVal } from 'react-redux-firebase'
+ * import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
  *
  * export default connect(({ firebase }) => ({
  *   // this.props.auth loaded from state.firebase.auth
@@ -54,7 +54,7 @@ import { getDotStrPath } from './utils/reducers'
  * @example <caption>Default Value</caption>
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect, getVal } from 'react-redux-firebase'
+ * import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
  *
  * const defaultValue = {
  *  1: {
@@ -93,7 +93,7 @@ export const getVal = (firebase, path, notSetValue) => {
  * import PropTypes from 'prop-types'
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+ * import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect(['todos']),
@@ -137,7 +137,7 @@ export const isLoaded = (...args) =>
  * import PropTypes from 'prop-types'
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect, isEmpty, isLoaded } from 'react-redux-firebase'
+ * import { firebaseConnect, isEmpty, isLoaded } from 'react-redux-firebase-immutable'
  *
  * const enhance = compose(
  *   firebaseConnect(['todos']),
@@ -264,7 +264,7 @@ const populateChild = (state, child, p) => {
  * @example <caption>Basic</caption>
  * import { compose } from 'redux'
  * import { connect } from 'react-redux'
- * import { firebaseConnect } from 'react-redux-firebase'
+ * import { firebaseConnect } from 'react-redux-firebase-immutable'
  * const populates = [{ child: 'owner', root: 'users' }]
  *
  * const enhance = compose(

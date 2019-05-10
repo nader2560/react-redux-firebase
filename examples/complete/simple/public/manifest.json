@@ -1,6 +1,6 @@
 {
-  "short_name": "react-redux-firebase simple example",
-  "name": "Create React + react-redux-firebase App Sample",
+  "short_name": "react-redux-firebase-immutable simple example",
+  "name": "Create React + react-redux-firebase-immutable App Sample",
   "icons": [
     {
       "src": "favicon.ico",

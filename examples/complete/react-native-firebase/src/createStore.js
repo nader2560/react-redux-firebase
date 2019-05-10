@@ -1,5 +1,5 @@
 import { applyMiddleware, compose, createStore } from 'redux';
-import { getFirebase, reactReduxFirebase } from 'react-redux-firebase';
+import { getFirebase, reactReduxFirebase } from 'react-redux-firebase-immutable';
 import RNFirebase from 'react-native-firebase';
 import thunk from 'redux-thunk';
 import makeRootReducer from './reducers';
@@ -7,7 +7,7 @@ import makeRootReducer from './reducers';
 const reactNativeFirebaseConfig = {
   debug: true
 };
-// for more config options, visit http://docs.react-redux-firebase.com/history/v2.0.0/docs/api/compose.html
+// for more config options, visit http://docs.react-redux-firebase-immutable.com/history/v2.0.0/docs/api/compose.html
 const reduxFirebaseConfig = {
   userProfile: 'users' // save users profiles to 'users' collection
 };

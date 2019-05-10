@@ -13,7 +13,7 @@ let firebaseInstance
  * along side applyMiddleware.
  * @param {Object} firebaseInstance - Initiated firebase instance (can also
  * be library following Firebase JS API such as `react-native-firebase`)
- * @param {Object} config - Containing react-redux-firebase specific configuration
+ * @param {Object} config - Containing react-redux-firebase-immutable specific configuration
  * @param {String} config.userProfile - Location on firebase to store user profiles
  * @param {Boolean} config.enableLogging - Whether or not to enable Firebase database logging.
  * **Note**: Only works if instance has enableLogging function.
@@ -71,7 +71,7 @@ let firebaseInstance
  * wraps the provided component (higher order component).
  * @example <caption>Setup</caption>
  * import { createStore, compose } from 'redux'
- * import { reactReduxFirebase } from 'react-redux-firebase'
+ * import { reactReduxFirebase } from 'react-redux-firebase-immutable'
  * import * as firebase from 'firebase'
 
  * // React Redux Firebase Config
@@ -84,7 +84,7 @@ let firebaseInstance
  * const fbConfg = {} // firebase config object
  * firebase.initializeApp(fbConfig)
  *
- * // Add react-redux-firebase to compose
+ * // Add react-redux-firebase-immutable to compose
  * // Note: In full projects this will often be within createStore.js or store.js
  * const createStoreWithFirebase = compose(
  *  reactReduxFirebase(firebase, config),
@@ -142,7 +142,7 @@ export default (instance, otherConfig) => next => (
  * import { applyMiddleware, compose, createStore } from 'redux';
  * import thunk from 'redux-thunk';
  * import makeRootReducer from './reducers';
- * import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+ * import { reactReduxFirebase, getFirebase } from 'react-redux-firebase-immutable';
  *
  * const fbConfig = {} // your firebase config
  *

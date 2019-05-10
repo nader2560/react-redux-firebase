@@ -1,6 +1,6 @@
 # Actions
 
-react-redux-firebase comes with built in async action creators for all parts of Firebase including storage, auth, Real Time Database, and Firestore (firestore requires extra setup). These action creators dispatch actions which are then handled by the reducers. The examples below show using action creators as promises, but it is also possible to use redux state.
+react-redux-firebase-immutable comes with built in async action creators for all parts of Firebase including storage, auth, Real Time Database, and Firestore (firestore requires extra setup). These action creators dispatch actions which are then handled by the reducers. The examples below show using action creators as promises, but it is also possible to use redux state.
 
 For more on what [an async action creator is](http://redux.js.org/docs/advanced/AsyncActions.html#async-action-creators), please visit the [section on it in the redux-docs](http://redux.js.org/docs/advanced/AsyncActions.html#async-action-creators).
 
@@ -11,7 +11,7 @@ Firebase actions can be accessed within a component by using either the [`withFi
 ```js
 import React from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect, withFirebase } from 'react-redux-firebase'
+import { firebaseConnect, withFirebase } from 'react-redux-firebase-immutable'
 
 const SimpleComponent = (props) => (
   <button onClick={() => props.firebase.push('todos', { some: 'data' })}>
@@ -36,7 +36,7 @@ When using functional components, [recompose](https://github.com/acdlite/recompo
 import React from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'recompose'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 const SimpleComponent = ({ createTodo }) => (
   <button onClick={createTodo}>
@@ -69,7 +69,7 @@ export default compose(
 ```js
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { firebaseConnect } from 'react-redux-firebase'
+import { firebaseConnect } from 'react-redux-firebase-immutable'
 
 class SimpleComponent extends Component {
   static propTypes = {
@@ -157,7 +157,7 @@ export default class SimpleComponent extends Component {
 import React from 'react'
 import PropTypes from 'prop-types'
 import { compose, withStateHandlers, withHandlers } from 'recompose'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 const SimpleComponent = ({ createTodo, wasSent }) => (
   <div>

@@ -17,7 +17,7 @@ import { v3ErrorMessage } from './constants'
  * @return {Function} - HOC that accepts a watchArray and wraps a component
  * @example <caption>Basic</caption>
  * // props.firebase set on App component as firebase object with helpers
- * import { createFirestoreConnect } from 'react-redux-firebase'
+ * import { createFirestoreConnect } from 'react-redux-firebase-immutable'
  * // create firebase connect that uses another redux store
  * const firestoreConnect = createFirestoreConnect('anotherStore')
  * // use the firebaseConnect to wrap a component
@@ -43,7 +43,7 @@ export const createFirestoreConnect = (storeKey = 'store') => (
     componentWillMount() {
       // Throw if using with react-redux@^6
       if (!this.context || !this.context[storeKey]) {
-        // Use react-redux-firebase@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
+        // Use react-redux-firebase-immutable@^3 for react-redux@^6 support. More info available in the migration guide: http://bit.ly/2SRNdiO'
         throw new Error(v3ErrorMessage)
       }
       const { firestore } = this.store
@@ -115,11 +115,11 @@ export const createFirestoreConnect = (storeKey = 'store') => (
  * @return {Function} - that accepts a component to wrap and returns the wrapped component
  * @example <caption>Basic</caption>
  * // props.firebase set on App component as firebase object with helpers
- * import { firestoreConnect } from 'react-redux-firebase'
+ * import { firestoreConnect } from 'react-redux-firebase-immutable'
  * export default firestoreConnect()(SomeComponent)
  * @example <caption>Basic</caption>
  * import { connect } from 'react-redux'
- * import { firestoreConnect } from 'react-redux-firebase'
+ * import { firestoreConnect } from 'react-redux-firebase-immutable'
  *
  * // pass todos list from redux as props.todosList
  * export default compose(
