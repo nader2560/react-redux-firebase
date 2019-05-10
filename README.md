@@ -1,4 +1,4 @@
-# react-redux-firebase
+# react-redux-firebase-immutable
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -11,7 +11,7 @@
 
 [![Gitter][gitter-image]][gitter-url]
 
-> Redux bindings for Firebase. Includes Higher Order Component (HOC) for use with React.
+> Redux bindings for Firebase. Includes Higher Order Component (HOC) for use with React. Copied from the React-redux-firebase package the only difference is that this one works only with immutable store.
 
 ## [Demo](https://demo.react-redux-firebase.com)
 
@@ -31,10 +31,10 @@ The [Material Example](https://github.com/nader2560/react-redux-firebase/tree/ma
 
 ## Installation
 
-Interested in support for [`react-redux@^6`](https://github.com/reduxjs/react-redux) or the [new react context API](https://reactjs.org/docs/context.html)? Checkout [the `next` branch which contains the next upcoming major version](https://github.com/nader2560/react-redux-firebase/tree/next) (installed through `npm i --save react-redux-firebase@next`).
+Interested in support for [`react-redux@^6`](https://github.com/reduxjs/react-redux) or the [new react context API](https://reactjs.org/docs/context.html)? Checkout [the `next` branch which contains the next upcoming major version](https://github.com/nader2560/react-redux-firebase-immutable/tree/next) (installed through `npm i --save react-redux-firebase@next`).
 
 ```bash
-npm install --save react-redux-firebase
+npm install --save react-redux-firebase-immutable
 ```
 
 This assumes you are using [npm](https://www.npmjs.com/) as your package manager.
@@ -50,7 +50,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, combineReducers, compose } from 'redux'
-import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase'
+import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase-immutable'
 import firebase from 'firebase/app'
 import  'firebase/auth'
 import  'firebase/database'
@@ -60,7 +60,7 @@ import  'firebase/database'
 
 const firebaseConfig = {}
 
-// react-redux-firebase config
+// react-redux-firebase-immutable config
 const rrfConfig = {
   userProfile: 'users',
   // useFirestoreForProfile: true // Firestore for Profile instead of Realtime DB
@@ -106,7 +106,7 @@ The Firebase instance can then be grabbed from context within your components (`
 ```jsx
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withFirebase } from 'react-redux-firebase'
+import { withFirebase } from 'react-redux-firebase-immutable'
 
 const Todos = ({ firebase }) => {
   const sampleTodo = { text: 'Sample', done: false }
@@ -136,7 +136,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 const Todos = ({ todos, firebase }) => {
   // Build Todos list if todos exist and are loaded
@@ -183,7 +183,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { firebaseConnect, getVal } from 'react-redux-firebase'
+import { firebaseConnect, getVal } from 'react-redux-firebase-immutable'
 
 // Component enhancer that loads todo into redux then into the todo prop
 const enhance = compose(
@@ -224,7 +224,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import { withFirebase, isLoaded, isEmpty } from 'react-redux-firebase-immutable'
 
 const Todos = ({ firebase }) => {
   // Build Todos list if todos exist and are loaded
@@ -260,11 +260,11 @@ export default compose(
 
 ## Firestore
 
-If you plan to use Firestore, you should checkout [`redux-firestore`][redux-firestore]. It integrates nicely with `react-redux-firebase` and it allows you to run Real Time Database and Firestore along side each other.
+If you plan to use Firestore, you should checkout [`redux-firestore`][redux-firestore]. It integrates nicely with `react-redux-firebase-immutable` and it allows you to run Real Time Database and Firestore along side each other.
 
-`react-redux-firebase` provides the `firestoreConnect` HOC (similar to `firebaseConnect`) for easy setting/unsetting of listeners.
+`react-redux-firebase-immutable` provides the `firestoreConnect` HOC (similar to `firebaseConnect`) for easy setting/unsetting of listeners.
 
-Currently `react-redux-firebase` still handles auth when using [`redux-firestore`][redux-firestore] - The future plan is to also have auth standalone auth library that will allow the developer to choose which pieces they do/do not want.
+Currently `react-redux-firebase-immutable` still handles auth when using [`redux-firestore`][redux-firestore] - The future plan is to also have auth standalone auth library that will allow the developer to choose which pieces they do/do not want.
 
 ## [Docs](http://react-redux-firebase.com)
 See full documentation at [react-redux-firebase.com](http://react-redux-firebase.com)
@@ -293,7 +293,7 @@ Snippet showing querying based on data in redux state. One of the more common ex
 
 #### [Decorators Snippet](examples/snippets/decorators)
 
-Snippet showing how to use decorators to simplify connect functions (redux's `connect` and react-redux-firebase's `firebaseConnect`)
+Snippet showing how to use decorators to simplify connect functions (redux's `connect` and react-redux-firebase-immutable's `firebaseConnect`)
 
 #### [Simple App Example](examples/complete/simple)
 
@@ -325,7 +325,7 @@ View docs for recipes on integrations with:
 
 ### Generator
 
-[generator-react-firebase](https://github.com/prescottprue/generator-react-firebase) is a yeoman generator uses react-redux-firebase when opting to include redux.
+[generator-react-firebase](https://github.com/prescottprue/generator-react-firebase) is a yeoman generator uses react-redux-firebase-immutable when opting to include redux.
 
 ### Complete Examples
 
